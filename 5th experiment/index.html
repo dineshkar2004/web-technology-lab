@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form action="">
+    enter a number: <input type="text" id="one"><br>
+    enter a nubmer: <input type="text" id="two"><br>
+    <input type="button" onclick="pro()"  value="multiply">
+    <input type="button" onclick="div()" value="division">
+ </form>
+ <p>result:<span id="result"></span></p>
+
+<script>
+    function pro(nums){
+    num1=document.getElementById("one").value;
+    num2=document.getElementById("two").value;
+    document.getElementById("result").innerHTML=num1*num2;
+}
+
+function div(nums){
+    num1=document.getElementById("one").value;
+    num2=document.getElementById("two").value;
+    document.getElementById("result").innerHTML=num1/num2;
+}
+</script>
+    
+</body>
+</html>
+
